@@ -5,8 +5,8 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Gohufont:pixelsize=14:antialias=true:autohint=true";
-static char *font2[] = { "Gohufont:pixelsize=14:antialias=true:autohint=true"};
+static char *font = "firacode:pixelsize=14:antialias=true:autohint=true";
+static char *font2[] = { "firacode:pixelsize=14:antialias=true:autohint=true"};
 static int borderpx = 15;
 
 /*
@@ -225,7 +225,7 @@ static Shortcut shortcuts[] = {
 	{ XK_ANY_MOD,           XK_Print,       printsel,       {.i =  0} },
 	{ TERMMOD,              XK_Prior,       zoom,           {.f = +1} },
 	{ TERMMOD,              XK_Next,        zoom,           {.f = -1} },
-	{ MODKEY,               XK_Home,        zoomreset,      {.f =  0} },
+	{ MODKEY,               XK_equal,       zoomreset,      {.f =  0} },
 	{ ShiftMask,            XK_Insert,      clippaste,      {.i =  0} },
 	{ MODKEY,               XK_c,           clipcopy,       {.i =  0} },
 	{ MODKEY,               XK_v,           clippaste,      {.i =  0} },

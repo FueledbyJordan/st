@@ -1,7 +1,3 @@
-# Luke's build of st - the simple (suckless) terminal
-
-The [suckless terminal (st)](https://st.suckless.org/) with some additional features that make it literally the best terminal emulator ever:
-
 ## Unique features (using dmenu)
 
 + **follow urls** by pressing `alt-l`
@@ -12,7 +8,7 @@ The [suckless terminal (st)](https://st.suckless.org/) with some additional feat
 
 + **scrollback** with `alt-↑/↓` or `alt-pageup/down` or `shift` while scrolling the mouse
 + OR **vim-bindings**: scroll up/down in history with `alt-k` and `alt-j`. Faster with `alt-u`/`alt-d`.
-+ **zoom/change font size**: same bindings as above, but holding down shift as well. `alt-home` returns to default
++ **zoom/change font size**: same bindings as above, but holding down shift as well. `alt-=` returns to default
 + **copy text** with `alt-c`, **paste** is `alt-v` or `shift-insert`
 
 ## Pretty stuff
@@ -32,18 +28,10 @@ The [suckless terminal (st)](https://st.suckless.org/) with some additional feat
 ## Installation for newbs
 
 ```
-git clone https://github.com/LukeSmithxyz/st
+git clone <repo_name>
 cd st
 sudo make install
 ```
-
-Users of Arch-based distros can also install it from the AUR as [st-luke-git](https://aur.archlinux.org/packages/st-luke-git/).
-
-Obviously, `make` is required to build. `fontconfig` is required for the default build, since it asks `fontconfig` for your system monospace font.  It might be obvious, but `libX11` and `libXft` are required as well. Chances are, you have all of this installed already.
-
-On OpenBSD, be sure to edit `config.mk` first and remove `-lrt` from the `$LIBS` before compiling.
-
-Be sure to have a composite manager (`xcompmgr`, `compton`, etc.) running if you want transparency.
 
 ## How to configure dynamically with Xresources
 
@@ -69,8 +57,3 @@ To be clear about the color settings:
 - But if `wal` has run in your session, its colors will take priority.
 
 Note that when you run `wal`, it will negate the transparency of existing windows, but new windows will continue with the previously defined transparency.
-
-## Contact
-
-- Luke Smith <luke@lukesmith.xyz>
-- [https://lukesmith.xyz](https://lukesmith.xyz)
