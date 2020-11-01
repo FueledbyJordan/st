@@ -5,6 +5,9 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
+
+#include "/home/djm/.cache/wal/colors-wal-st.h"
+
 static char *font = "firacode:pixelsize=14:antialias=true:autohint=true";
 static char *font2[] = { "firacode:pixelsize=14:antialias=true:autohint=true"};
 static int borderpx = 15;
@@ -17,7 +20,7 @@ static int borderpx = 15;
  * 4: value of shell in /etc/passwd
  * 5: value of shell in config.h
  */
-static char *shell = "/bin/sh";
+static char *shell = "/bin/bash";
 char *utmp = NULL;
 char *stty_args = "stty raw pass8 nl -echo -iexten -cstopb 38400";
 
@@ -81,40 +84,40 @@ char *termname = "st-256color";
  *
  *	stty tabs
  */
-unsigned int tabspaces = 8;
+unsigned int tabspaces = 4;
 
 /* bg opacity */
 float alpha = 0.92;
 
 /* Terminal colors (16 first used in escape sequence) */
-static const char *colorname[] = {
-	"#282c34", /* 0: black */
-	"#e06c75", /* 1: red */
-	"#98c379", /* 2: green */
-	"#d19a66", /* 3: yellow */
-	"#61afef", /* 4: blue */
-	"#c678dd", /* 5: magenta */
-	"#56b6c2", /* 6: cyan */
-	"#abb2bf", /* 7: white */
-	"#5c6370", /* 8: brblack */
-	"#e06c75", /* 9: brred */
-	"#98c379", /* 10: brgreen */
-	"#d19a66", /* 11: bryellow */
-	"#61afef", /* 12: brblue */
-	"#c678dd", /* 13: brmagenta */
-	"#56b6c2", /* 14: brcyan */
-	"#ffffff", /* 15: brwhite */
-};
+//static const char *colorname[] = {
+//	"#282c34", /* 0: black */
+//	"#e06c75", /* 1: red */
+//	"#98c379", /* 2: green */
+//	"#d19a66", /* 3: yellow */
+//	"#61afef", /* 4: blue */
+//	"#c678dd", /* 5: magenta */
+//	"#56b6c2", /* 6: cyan */
+//	"#abb2bf", /* 7: white */
+//	"#5c6370", /* 8: brblack */
+//	"#e06c75", /* 9: brred */
+//	"#98c379", /* 10: brgreen */
+//	"#d19a66", /* 11: bryellow */
+//	"#61afef", /* 12: brblue */
+//	"#c678dd", /* 13: brmagenta */
+//	"#56b6c2", /* 14: brcyan */
+//	"#ffffff", /* 15: brwhite */
+//};
 
 
 /*
  * Default colors (colorname index)
  * foreground, background, cursor, reverse cursor
  */
-unsigned int defaultfg = 7;
-unsigned int defaultbg = 0;
-static unsigned int defaultcs = 7;
-static unsigned int defaultrcs = 0;
+//unsigned int defaultfg = 7;
+//unsigned int defaultbg = 0;
+//static unsigned int defaultcs = 7;
+//static unsigned int defaultrcs = 0;
 
 /*
  * Default shape of cursor
