@@ -2093,6 +2093,7 @@ resource_load(XrmDatabase db, char *name, enum resource_type rtype, void *dst)
 void
 config_init(void)
 {
+	return;
 	char *resm;
 	XrmDatabase db;
 	ResourcePref *p;

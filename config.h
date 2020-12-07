@@ -7,7 +7,7 @@
  */
 static char *font = "firacode:pixelsize=14:antialias=true:autohint=true";
 static char *font2[] = { "firacode:pixelsize=14:antialias=true:autohint=true"};
-static int borderpx = 15;
+static int borderpx = 8;
 
 /*
  * What program is execed by st depends of these precedence rules:
@@ -17,7 +17,7 @@ static int borderpx = 15;
  * 4: value of shell in /etc/passwd
  * 5: value of shell in config.h
  */
-static char *shell = "/bin/sh";
+static char *shell = "/bin/zsh";
 char *utmp = NULL;
 char *stty_args = "stty raw pass8 nl -echo -iexten -cstopb 38400";
 
@@ -84,26 +84,26 @@ char *termname = "st-256color";
 unsigned int tabspaces = 8;
 
 /* bg opacity */
-float alpha = 0.92;
+float alpha = 1.00;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-	"#282c34", /* 0: black */
-	"#e06c75", /* 1: red */
-	"#98c379", /* 2: green */
-	"#d19a66", /* 3: yellow */
-	"#61afef", /* 4: blue */
-	"#c678dd", /* 5: magenta */
-	"#56b6c2", /* 6: cyan */
-	"#abb2bf", /* 7: white */
-	"#5c6370", /* 8: brblack */
-	"#e06c75", /* 9: brred */
-	"#98c379", /* 10: brgreen */
-	"#d19a66", /* 11: bryellow */
-	"#61afef", /* 12: brblue */
-	"#c678dd", /* 13: brmagenta */
-	"#56b6c2", /* 14: brcyan */
-	"#ffffff", /* 15: brwhite */
+	"#282C34", /* 0: black */
+	"#E06C75", /* 1: red */
+	"#98C379", /* 2: green */
+	"#E5C07B", /* 3: yellow */
+	"#61AFEF", /* 4: blue */
+	"#C678DD", /* 5: magenta */
+	"#56B6C2", /* 6: cyan */
+	"#ABB2BF", /* 7: white */
+	"#4B5263", /* 8: brblack */
+	"#BE5046", /* 9: brred */
+	"#98C379", /* 10: brgreen */
+	"#D19A66", /* 11: bryellow */
+	"#61AFEF", /* 12: brblue */
+	"#C678DD", /* 13: brmagenta */
+	"#56B6C2", /* 14: brcyan */
+	"#3E4452", /* 15: brwhite */
 };
 
 
