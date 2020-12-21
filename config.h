@@ -5,6 +5,9 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
+
+#include "/home/djm/.cache/wal/colors-wal-st.h"
+
 static char *font = "firacode:pixelsize=14:antialias=true:autohint=true";
 static char *font2[] = { "firacode:pixelsize=14:antialias=true:autohint=true"};
 static int borderpx = 8;
@@ -18,6 +21,7 @@ static int borderpx = 8;
  * 5: value of shell in config.h
  */
 static char *shell = "/bin/zsh";
+
 char *utmp = NULL;
 char *stty_args = "stty raw pass8 nl -echo -iexten -cstopb 38400";
 
@@ -81,7 +85,7 @@ char *termname = "st-256color";
  *
  *	stty tabs
  */
-unsigned int tabspaces = 8;
+unsigned int tabspaces = 4;
 
 /* bg opacity */
 float alpha = 1.00;
@@ -106,15 +110,14 @@ static const char *colorname[] = {
 	"#3E4452", /* 15: brwhite */
 };
 
-
 /*
  * Default colors (colorname index)
  * foreground, background, cursor, reverse cursor
  */
-unsigned int defaultfg = 7;
-unsigned int defaultbg = 0;
-static unsigned int defaultcs = 7;
-static unsigned int defaultrcs = 0;
+//unsigned int defaultfg = 7;
+//unsigned int defaultbg = 0;
+//static unsigned int defaultcs = 7;
+//static unsigned int defaultrcs = 0;
 
 /*
  * Default shape of cursor
